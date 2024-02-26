@@ -1,0 +1,35 @@
+body{
+  background-color: black;
+}
+.health-report{
+    padding: var(--page-padding);
+    box-sizing: border-box;
+    min-height: 100vh;
+    max-height: auto;
+    min-width: 100vw;
+    max-width: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0rem;
+    background: var(--background-color-8);
+    background-color: black;
+  }
+  
+  .chart-container{
+    margin-top: 4rem;
+    border: 1px solid var(--background-color-3);
+    padding: 1.3rem;
+    text-align: center;
+    background-color: var(--background-color);;
+  }
+  
+  .chart-header{
+    color: var(--color)
+  }
+
+  @media (max-width: 768px) {
+    .health-report {
+      grid-template-columns: 1fr;
+    }
+  }
+  
